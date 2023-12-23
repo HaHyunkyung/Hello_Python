@@ -9,4 +9,4 @@ elif user_choice > pc_choice:
     print("Lower!", pc_choice)
 elif user_choice < pc_choice:
     print("Higher! Computer choice", pc_choice)
-    
+     
