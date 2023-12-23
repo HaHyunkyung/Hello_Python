@@ -6,7 +6,7 @@ pc_choice = randint(1,50)
 if user_choice == pc_choice:
     print("You won!")
 elif user_choice > pc_choice:
-    print("Lower!")
+    print("Lower!", pc_choice)
 elif user_choice < pc_choice:
-    print("Higher!")
+    print("Higher! Computer choice", pc_choice)
     
