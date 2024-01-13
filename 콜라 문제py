@@ -1,0 +1,14 @@
+def solution(a, b, n):
+    answer = 0
+    while(n>=a):
+        #//연산자는 정수 몫을 반환
+        take_bottle = n//a*b
+        sub_bottle = n%a
+        
+        answer+=take_bottle
+        n = sub_bottle+take_bottle
+        
+        
+    return answer
+a,b,n =2,1,20
+print(solution(a,b,n))
