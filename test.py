@@ -64,6 +64,7 @@ sp_str = 'a b c d e'
 sp_list = []
 sp_list = sp_str.split(' ')
 print(sp_list)
+print(sp_str.split(' ')[1]) #->한개씩 보는것도 가능함
 
 #dictionary => 키:값 순으로 저장됨
 
@@ -73,3 +74,8 @@ print(dic.values()) #=>값만 전부 가져옴
 print(dic.get(1)) #=> 키값에 맞는 값 가져옴
 dic[5] = '사계절' #=> 변수[키] = 값 써주면 딕셔너리에 키와 값 추가됨
 print(dic.get(5))
+
+#sorted
+ed_str = "54321"
+ed_str = ''.join(sorted(ed_str))
+print(ed_str)
