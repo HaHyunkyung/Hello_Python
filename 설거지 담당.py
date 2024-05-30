@@ -1,26 +1,16 @@
-def largest_multiple_of_300(N, nums):
-    total_sum = sum(nums)
+# -*- coding: utf-8 -*-
+import sys
+def check_dishwashing_day(day_number):
+    dishwashing_days = [1, 3, 5, 7]  # 설거지를 하는 요일의 번호
 
-    # 모든 정수의 합이 3의 배수가 아니면 300의 배수를 만들 수 없음
-    if total_sum % 3 != 0:
-        return -1
-
-    # 정수를 내림차순으로 정렬
-    nums.sort(reverse=True)
-
-    # 정수들을 문자열로 이어붙이기
-    result_str = ''.join(map(str, nums))
-
-    # 만들어진 문자열이 0이면 결과는 0
-    if result_str == '0':
-        return '0'
-
-    return result_str
+    if day_number in dishwashing_days:
+        return "RUN"
+    else:
+        return "STAY"
 
 # 입력 받기
-N = int(input())
-nums = list(map(int, input().split()))
+day_number = int(input())
 
 # 결과 출력
-result = largest_multiple_of_300(N, nums)
+result = check_dishwashing_day(day_number)
 print(result)
